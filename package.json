@@ -8,6 +8,9 @@
     "start": "noder/server/server.js",
     "server": "nodemon server/server.js"
   },
+  "engines": {
+    "node": "6.11.2"
+  }
   "author": "Emii",
   "license": "ISC",
   "dependencies": {
