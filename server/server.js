@@ -5,7 +5,7 @@ const formidable = require('express-formidable');
 const cloudinary = require('cloudinary');
 const moment = require('moment');
 const SHA1 = require('crypto-js/sha1');
-const PORT = 8081;
+
 
 const app = express();
 const mongoose = require('mongoose');
@@ -730,6 +730,6 @@ if(process.env.NODE_ENV === 'production'){
     })
 }
 
-app.listen(PORT, ()=>{
-    console.log(`App is running on port ${PORT}`);
+app.listen(process.env.PORT || 8081, ()=>{
+    console.log(`App is running on port 8081`);
 })
